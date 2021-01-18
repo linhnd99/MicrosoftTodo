@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="MicrosoftTodo" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="VcI-dh-Hgp" id="0iF-Jc-D2b"/>
+                <outlet property="menuTableView" destination="xap-Cd-hCO" id="J5K-99-xHN"/>
+                <outlet property="userLabel" destination="w8S-YC-3WW" id="wDU-xu-XcC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fch-9K-gLs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VcI-dh-Hgp">
+                            <rect key="frame" x="8" y="5.5" width="40" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0TL-Zh-jUO"/>
+                                <constraint firstAttribute="width" constant="40" id="BWk-UH-N3D"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Duc Linh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8S-YC-3WW">
+                            <rect key="frame" x="56" y="15" width="302" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-Rs-jBV">
+                            <rect key="frame" x="366" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="0VL-B9-zxj"/>
+                                <constraint firstAttribute="height" constant="40" id="vpb-4E-C8F"/>
+                            </constraints>
+                            <state key="normal">
+                                <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="searchButtonDidTap:" destination="-1" eventType="touchUpInside" id="FnY-Vv-lWl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="VcI-dh-Hgp" firstAttribute="centerY" secondItem="Fch-9K-gLs" secondAttribute="centerY" id="707-cb-sIB"/>
+                        <constraint firstItem="dKe-Rs-jBV" firstAttribute="centerY" secondItem="Fch-9K-gLs" secondAttribute="centerY" id="8ya-zG-JaF"/>
+                        <constraint firstItem="w8S-YC-3WW" firstAttribute="leading" secondItem="VcI-dh-Hgp" secondAttribute="trailing" constant="8" id="FQn-XB-JP6"/>
+                        <constraint firstItem="dKe-Rs-jBV" firstAttribute="leading" secondItem="w8S-YC-3WW" secondAttribute="trailing" constant="8" id="Q6N-p9-bYb"/>
+                        <constraint firstAttribute="height" constant="50" id="UHh-Cm-PKg"/>
+                        <constraint firstAttribute="trailing" secondItem="dKe-Rs-jBV" secondAttribute="trailing" constant="8" id="aIQ-4N-sIV"/>
+                        <constraint firstItem="VcI-dh-Hgp" firstAttribute="leading" secondItem="Fch-9K-gLs" secondAttribute="leading" constant="8" id="lLt-f3-vnT"/>
+                        <constraint firstItem="w8S-YC-3WW" firstAttribute="centerY" secondItem="Fch-9K-gLs" secondAttribute="centerY" id="mid-GE-WWa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2b-IJ-Jis">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-jP-Q7n">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Danh sách mới">
+                                <color key="titleColor" name="AccentColor"/>
+                                <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonDidTap:" destination="-1" eventType="touchUpInside" id="bRw-od-XAV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLS-3d-2tw">
+                            <rect key="frame" x="374" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="rY9-ar-HEU"/>
+                                <constraint firstAttribute="width" constant="40" id="w0c-KT-JPa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal">
+                                <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="eOs-jP-Q7n" firstAttribute="leading" secondItem="E2b-IJ-Jis" secondAttribute="leading" id="4aB-EW-YOQ"/>
+                        <constraint firstItem="hLS-3d-2tw" firstAttribute="leading" secondItem="eOs-jP-Q7n" secondAttribute="trailing" id="FIV-Vu-Ifu"/>
+                        <constraint firstItem="hLS-3d-2tw" firstAttribute="centerY" secondItem="E2b-IJ-Jis" secondAttribute="centerY" id="NlD-YS-0nw"/>
+                        <constraint firstAttribute="bottom" secondItem="eOs-jP-Q7n" secondAttribute="bottom" id="RFc-7s-gHx"/>
+                        <constraint firstAttribute="height" constant="50" id="ReD-B8-czV"/>
+                        <constraint firstAttribute="trailing" secondItem="hLS-3d-2tw" secondAttribute="trailing" id="ojY-yj-xiC"/>
+                        <constraint firstItem="eOs-jP-Q7n" firstAttribute="top" secondItem="E2b-IJ-Jis" secondAttribute="top" id="x5Y-Bb-meV"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xap-Cd-hCO">
+                    <rect key="frame" x="0.0" y="94" width="414" height="718"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hOV-kQ-bOf"/>
+                        <outlet property="delegate" destination="-1" id="TVz-WF-Vdp"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="E2b-IJ-Jis" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6oT-hM-vH0"/>
+                <constraint firstItem="Fch-9K-gLs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KCB-1L-7my"/>
+                <constraint firstItem="xap-Cd-hCO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Q09-WT-AYd"/>
+                <constraint firstItem="Fch-9K-gLs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vle-RO-vmG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xap-Cd-hCO" secondAttribute="trailing" id="YeH-zC-Cix"/>
+                <constraint firstItem="E2b-IJ-Jis" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dZH-ww-fcy"/>
+                <constraint firstItem="Fch-9K-gLs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fjf-Ht-76f"/>
+                <constraint firstItem="xap-Cd-hCO" firstAttribute="top" secondItem="Fch-9K-gLs" secondAttribute="bottom" id="qqQ-pa-dgK"/>
+                <constraint firstItem="E2b-IJ-Jis" firstAttribute="top" secondItem="xap-Cd-hCO" secondAttribute="bottom" id="x1M-gI-aX4"/>
+                <constraint firstItem="E2b-IJ-Jis" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ykO-dw-LOR"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="80.357142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

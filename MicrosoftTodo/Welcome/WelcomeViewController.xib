@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="MicrosoftTodo" customModuleProvider="target">
+            <connections>
+                <outlet property="txtUsername" destination="iOz-Z9-6Eg" id="x8U-g6-r53"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chào mừng bạn đến với Microsoft Todo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd3-DL-wvQ">
+                    <rect key="frame" x="20" y="84" width="374" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="f6z-sh-Uka"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="workspace.png" translatesAutoresizingMaskIntoConstraints="NO" id="d5n-op-n5c">
+                    <rect key="frame" x="20" y="174" width="374" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="dCR-1Z-jgQ"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email hoặc số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOz-Z9-6Eg">
+                    <rect key="frame" x="20" y="434" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="o35-Oo-Lrg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="txtUsernameDidOnExit:" destination="-1" eventType="editingDidEndOnExit" id="gfX-2E-uTn"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4u-9y-hrD">
+                    <rect key="frame" x="84" y="812" width="246" height="30"/>
+                    <state key="normal" title="Bạn không có tài khoảng Microsoft?"/>
+                    <connections>
+                        <action selector="btnRegisterClick:" destination="-1" eventType="touchUpInside" id="LGn-CK-GVR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập bằng tài khoản cơ quan, trường học hoặc Microsoft" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y5-iC-lba">
+                    <rect key="frame" x="20" y="484" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2kY-oT-dTp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jd3-DL-wvQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0Uz-11-eaL"/>
+                <constraint firstItem="d5n-op-n5c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1GP-iv-QPd"/>
+                <constraint firstItem="d5n-op-n5c" firstAttribute="top" secondItem="Jd3-DL-wvQ" secondAttribute="bottom" constant="20" id="3y4-ln-kib"/>
+                <constraint firstItem="4y5-iC-lba" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Jp-Ja-66t"/>
+                <constraint firstItem="K4u-9y-hrD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8PW-qt-Yv1"/>
+                <constraint firstItem="Jd3-DL-wvQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="CSN-bH-u1n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d5n-op-n5c" secondAttribute="trailing" constant="20" id="Len-gS-L04"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iOz-Z9-6Eg" secondAttribute="trailing" constant="20" id="M1n-JT-wSw"/>
+                <constraint firstItem="iOz-Z9-6Eg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="PSI-fh-9TO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="K4u-9y-hrD" secondAttribute="bottom" constant="20" id="Uh7-0J-vQO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jd3-DL-wvQ" secondAttribute="trailing" constant="20" id="aH5-WD-dlQ"/>
+                <constraint firstItem="iOz-Z9-6Eg" firstAttribute="top" secondItem="d5n-op-n5c" secondAttribute="bottom" constant="10" id="hYW-Ux-dOh"/>
+                <constraint firstItem="4y5-iC-lba" firstAttribute="top" secondItem="iOz-Z9-6Eg" secondAttribute="bottom" constant="10" id="lX5-Ds-Ri8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4y5-iC-lba" secondAttribute="trailing" constant="20" id="laY-Na-Yh8"/>
+            </constraints>
+            <point key="canvasLocation" x="-84.057971014492765" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="workspace.png" width="409.60000610351562" height="409.60000610351562"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

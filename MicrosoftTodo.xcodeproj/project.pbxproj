@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76C385D06333331BA6E55348 /* Pods_MicrosoftTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2299465B833E083EFF1748A7 /* Pods_MicrosoftTodo.framework */; };
+		970288C725AC2D93004DCD5C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288C525AC2D93004DCD5C /* MenuViewController.swift */; };
+		970288C825AC2D93004DCD5C /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970288C625AC2D93004DCD5C /* MenuViewController.xib */; };
+		970288D125AC36A8004DCD5C /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288CF25AC36A8004DCD5C /* MenuTableViewCell.swift */; };
+		970288D225AC36A8004DCD5C /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970288D025AC36A8004DCD5C /* MenuTableViewCell.xib */; };
+		970288D725AC4919004DCD5C /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 970288D625AC4919004DCD5C /* star.png */; };
+		970288E425AC4C90004DCD5C /* MyDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970288E225AC4C90004DCD5C /* MyDayViewController.swift */; };
+		970288E525AC4C90004DCD5C /* MyDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 970288E325AC4C90004DCD5C /* MyDayViewController.xib */; };
+		970EB3C525AED8BA0087F827 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970EB3C425AED8BA0087F827 /* Task.swift */; };
+		971F9A4625AC01C600FFB23A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F9A4525AC01C600FFB23A /* AppDelegate.swift */; };
+		971F9A4A25AC01C600FFB23A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F9A4925AC01C600FFB23A /* ViewController.swift */; };
+		971F9A4F25AC01C600FFB23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971F9A4E25AC01C600FFB23A /* Assets.xcassets */; };
+		971F9A5225AC01C600FFB23A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971F9A5025AC01C600FFB23A /* LaunchScreen.storyboard */; };
+		971F9A5D25AC01C600FFB23A /* MicrosoftTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F9A5C25AC01C600FFB23A /* MicrosoftTodoTests.swift */; };
+		971F9A6825AC01C700FFB23A /* MicrosoftTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F9A6725AC01C700FFB23A /* MicrosoftTodoUITests.swift */; };
+		971F9A7A25AC02A400FFB23A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F9A7825AC02A400FFB23A /* WelcomeViewController.swift */; };
+		971F9A7B25AC02A400FFB23A /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971F9A7925AC02A400FFB23A /* WelcomeViewController.xib */; };
+		971F9A8925AC053B00FFB23A /* workspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 971F9A8825AC053B00FFB23A /* workspace.png */; };
+		97319B4625B02B91002B2FD6 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97319B4425B02B91002B2FD6 /* TaskTableViewCell.swift */; };
+		97319B4725B02B91002B2FD6 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97319B4525B02B91002B2FD6 /* TaskTableViewCell.xib */; };
+		97319B4C25B03365002B2FD6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97319B4B25B03365002B2FD6 /* Icon.swift */; };
+		97319B5925B044AA002B2FD6 /* DatePickerSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97319B5825B044AA002B2FD6 /* DatePickerSubview.swift */; };
+		97319B5E25B044B4002B2FD6 /* DatePickerSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97319B5D25B044B4002B2FD6 /* DatePickerSubview.xib */; };
+		974DC5CB25ADA20B00AAB78D /* AddTaskSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 974DC5CA25ADA20B00AAB78D /* AddTaskSubview.xib */; };
+		974DC5D025ADA21900AAB78D /* AddTaskSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974DC5CF25ADA21900AAB78D /* AddTaskSubview.swift */; };
+		9767CB8B25AEF09200AEC50C /* TaskRLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CB8A25AEF09200AEC50C /* TaskRLM.swift */; };
+		9767CB9725AEF81200AEC50C /* TaskRLMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CB9625AEF81200AEC50C /* TaskRLMController.swift */; };
+		9767CB9C25AEFF1300AEC50C /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CB9B25AEFF1300AEC50C /* RealmHelper.swift */; };
+		9781533125B29318007DE33B /* AddingImportanceSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9781533025B29318007DE33B /* AddingImportanceSubview.swift */; };
+		9781533625B29361007DE33B /* AddingImportanceSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9781533525B29361007DE33B /* AddingImportanceSubview.xib */; };
+		9781536D25B2B7BE007DE33B /* DateSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9781536B25B2B7BE007DE33B /* DateSubview.swift */; };
+		9781536E25B2B7BE007DE33B /* DateSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9781536C25B2B7BE007DE33B /* DateSubview.xib */; };
+		97ABA32E25AD892200883AC2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABA32D25AD892200883AC2 /* CustomView.swift */; };
+		97FBAB1825B2019400DB2446 /* ImportanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBAB1625B2019400DB2446 /* ImportanceViewController.swift */; };
+		97FBAB1925B2019400DB2446 /* ImportanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FBAB1725B2019400DB2446 /* ImportanceViewController.xib */; };
+		97FBAB2225B2037B00DB2446 /* ImportanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FBAB2025B2037B00DB2446 /* ImportanceTableViewCell.swift */; };
+		97FBAB2325B2037B00DB2446 /* ImportanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FBAB2125B2037B00DB2446 /* ImportanceTableViewCell.xib */; };
+		9C1BC61685CC05E6B816E9DC /* Pods_MicrosoftTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34417E6FB409446713B54563 /* Pods_MicrosoftTodoTests.framework */; };
+		E50BF8389AD359AD50BABDA8 /* Pods_MicrosoftTodo_MicrosoftTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08412C7AE45CED884F9C2F05 /* Pods_MicrosoftTodo_MicrosoftTodoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		971F9A5925AC01C600FFB23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 971F9A3A25AC01C500FFB23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971F9A4125AC01C500FFB23A;
+			remoteInfo = MicrosoftTodo;
+		};
+		971F9A6425AC01C700FFB23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 971F9A3A25AC01C500FFB23A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971F9A4125AC01C500FFB23A;
+			remoteInfo = MicrosoftTodo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08412C7AE45CED884F9C2F05 /* Pods_MicrosoftTodo_MicrosoftTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrosoftTodo_MicrosoftTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2299465B833E083EFF1748A7 /* Pods_MicrosoftTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrosoftTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C27FF4932C9A7C95F46B97 /* Pods-MicrosoftTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftTodoTests.release.xcconfig"; path = "Target Support Files/Pods-MicrosoftTodoTests/Pods-MicrosoftTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		34417E6FB409446713B54563 /* Pods_MicrosoftTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrosoftTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		970288C525AC2D93004DCD5C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		970288C625AC2D93004DCD5C /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		970288CF25AC36A8004DCD5C /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		970288D025AC36A8004DCD5C /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		970288D625AC4919004DCD5C /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		970288E225AC4C90004DCD5C /* MyDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayViewController.swift; sourceTree = "<group>"; };
+		970288E325AC4C90004DCD5C /* MyDayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDayViewController.xib; sourceTree = "<group>"; };
+		970EB3C425AED8BA0087F827 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		971F9A4225AC01C600FFB23A /* MicrosoftTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicrosoftTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		971F9A4525AC01C600FFB23A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		971F9A4925AC01C600FFB23A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		971F9A4E25AC01C600FFB23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		971F9A5125AC01C600FFB23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		971F9A5325AC01C600FFB23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971F9A5825AC01C600FFB23A /* MicrosoftTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicrosoftTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		971F9A5C25AC01C600FFB23A /* MicrosoftTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftTodoTests.swift; sourceTree = "<group>"; };
+		971F9A5E25AC01C600FFB23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971F9A6325AC01C700FFB23A /* MicrosoftTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicrosoftTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		971F9A6725AC01C700FFB23A /* MicrosoftTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrosoftTodoUITests.swift; sourceTree = "<group>"; };
+		971F9A6925AC01C700FFB23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971F9A7825AC02A400FFB23A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		971F9A7925AC02A400FFB23A /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		971F9A8825AC053B00FFB23A /* workspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workspace.png; sourceTree = "<group>"; };
+		97319B4425B02B91002B2FD6 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		97319B4525B02B91002B2FD6 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		97319B4B25B03365002B2FD6 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		97319B5825B044AA002B2FD6 /* DatePickerSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerSubview.swift; sourceTree = "<group>"; };
+		97319B5D25B044B4002B2FD6 /* DatePickerSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerSubview.xib; sourceTree = "<group>"; };
+		974DC5CA25ADA20B00AAB78D /* AddTaskSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskSubview.xib; sourceTree = "<group>"; };
+		974DC5CF25ADA21900AAB78D /* AddTaskSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskSubview.swift; sourceTree = "<group>"; };
+		9767CB8A25AEF09200AEC50C /* TaskRLM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRLM.swift; sourceTree = "<group>"; };
+		9767CB9625AEF81200AEC50C /* TaskRLMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRLMController.swift; sourceTree = "<group>"; };
+		9767CB9B25AEFF1300AEC50C /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		9781533025B29318007DE33B /* AddingImportanceSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingImportanceSubview.swift; sourceTree = "<group>"; };
+		9781533525B29361007DE33B /* AddingImportanceSubview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddingImportanceSubview.xib; sourceTree = "<group>"; };
+		9781536B25B2B7BE007DE33B /* DateSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSubview.swift; sourceTree = "<group>"; };
+		9781536C25B2B7BE007DE33B /* DateSubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateSubview.xib; sourceTree = "<group>"; };
+		97ABA32D25AD892200883AC2 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		97FBAB1625B2019400DB2446 /* ImportanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportanceViewController.swift; sourceTree = "<group>"; };
+		97FBAB1725B2019400DB2446 /* ImportanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportanceViewController.xib; sourceTree = "<group>"; };
+		97FBAB2025B2037B00DB2446 /* ImportanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportanceTableViewCell.swift; sourceTree = "<group>"; };
+		97FBAB2125B2037B00DB2446 /* ImportanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportanceTableViewCell.xib; sourceTree = "<group>"; };
+		A4F2F0774C43DA44246622F2 /* Pods-MicrosoftTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftTodo.release.xcconfig"; path = "Target Support Files/Pods-MicrosoftTodo/Pods-MicrosoftTodo.release.xcconfig"; sourceTree = "<group>"; };
+		BE67EE94E6858DF6F19CBF63 /* Pods-MicrosoftTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-MicrosoftTodoTests/Pods-MicrosoftTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C015A67272FCA425D8EFA802 /* Pods-MicrosoftTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftTodo.debug.xcconfig"; path = "Target Support Files/Pods-MicrosoftTodo/Pods-MicrosoftTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		F058CAA03E408C35A3106A21 /* Pods-MicrosoftTodo-MicrosoftTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftTodo-MicrosoftTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MicrosoftTodo-MicrosoftTodoUITests/Pods-MicrosoftTodo-MicrosoftTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFC68CD5ABEB39B917281EA2 /* Pods-MicrosoftTodo-MicrosoftTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftTodo-MicrosoftTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-MicrosoftTodo-MicrosoftTodoUITests/Pods-MicrosoftTodo-MicrosoftTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		971F9A3F25AC01C500FFB23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C385D06333331BA6E55348 /* Pods_MicrosoftTodo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971F9A5525AC01C600FFB23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1BC61685CC05E6B816E9DC /* Pods_MicrosoftTodoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971F9A6025AC01C700FFB23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50BF8389AD359AD50BABDA8 /* Pods_MicrosoftTodo_MicrosoftTodoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E2303B91D9D12498E46A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C015A67272FCA425D8EFA802 /* Pods-MicrosoftTodo.debug.xcconfig */,
+				A4F2F0774C43DA44246622F2 /* Pods-MicrosoftTodo.release.xcconfig */,
+				F058CAA03E408C35A3106A21 /* Pods-MicrosoftTodo-MicrosoftTodoUITests.debug.xcconfig */,
+				FFC68CD5ABEB39B917281EA2 /* Pods-MicrosoftTodo-MicrosoftTodoUITests.release.xcconfig */,
+				BE67EE94E6858DF6F19CBF63 /* Pods-MicrosoftTodoTests.debug.xcconfig */,
+				31C27FF4932C9A7C95F46B97 /* Pods-MicrosoftTodoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		970288C425AC2D7D004DCD5C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				970288C525AC2D93004DCD5C /* MenuViewController.swift */,
+				970288C625AC2D93004DCD5C /* MenuViewController.xib */,
+				970288CF25AC36A8004DCD5C /* MenuTableViewCell.swift */,
+				970288D025AC36A8004DCD5C /* MenuTableViewCell.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		970288DB25AC4C6E004DCD5C /* MyDay */ = {
+			isa = PBXGroup;
+			children = (
+				970288E225AC4C90004DCD5C /* MyDayViewController.swift */,
+				970288E325AC4C90004DCD5C /* MyDayViewController.xib */,
+				974DC5CA25ADA20B00AAB78D /* AddTaskSubview.xib */,
+				974DC5CF25ADA21900AAB78D /* AddTaskSubview.swift */,
+				97319B4425B02B91002B2FD6 /* TaskTableViewCell.swift */,
+				97319B4525B02B91002B2FD6 /* TaskTableViewCell.xib */,
+				97319B5825B044AA002B2FD6 /* DatePickerSubview.swift */,
+				97319B5D25B044B4002B2FD6 /* DatePickerSubview.xib */,
+			);
+			path = MyDay;
+			sourceTree = "<group>";
+		};
+		970EB3C325AED73E0087F827 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				970EB3C425AED8BA0087F827 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		971F9A3925AC01C500FFB23A = {
+			isa = PBXGroup;
+			children = (
+				971F9A7F25AC049E00FFB23A /* Assets */,
+				971F9A4425AC01C600FFB23A /* MicrosoftTodo */,
+				971F9A5B25AC01C600FFB23A /* MicrosoftTodoTests */,
+				971F9A6625AC01C700FFB23A /* MicrosoftTodoUITests */,
+				971F9A4325AC01C600FFB23A /* Products */,
+				06E2303B91D9D12498E46A61 /* Pods */,
+				AA275129C3BFC43F5BCDBE71 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		971F9A4325AC01C600FFB23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				971F9A4225AC01C600FFB23A /* MicrosoftTodo.app */,
+				971F9A5825AC01C600FFB23A /* MicrosoftTodoTests.xctest */,
+				971F9A6325AC01C700FFB23A /* MicrosoftTodoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		971F9A4425AC01C600FFB23A /* MicrosoftTodo */ = {
+			isa = PBXGroup;
+			children = (
+				97FBAB1525B2016900DB2446 /* Importance */,
+				9767CB8925AEF03400AEC50C /* RealmHelper */,
+				970EB3C325AED73E0087F827 /* Models */,
+				97ABA32C25AD88FA00883AC2 /* Utils */,
+				970288DB25AC4C6E004DCD5C /* MyDay */,
+				970288C425AC2D7D004DCD5C /* Menu */,
+				971F9A8D25AC062D00FFB23A /* Welcome */,
+				971F9A4525AC01C600FFB23A /* AppDelegate.swift */,
+				971F9A4925AC01C600FFB23A /* ViewController.swift */,
+				971F9A4E25AC01C600FFB23A /* Assets.xcassets */,
+				971F9A5025AC01C600FFB23A /* LaunchScreen.storyboard */,
+				971F9A5325AC01C600FFB23A /* Info.plist */,
+			);
+			path = MicrosoftTodo;
+			sourceTree = "<group>";
+		};
+		971F9A5B25AC01C600FFB23A /* MicrosoftTodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				971F9A5C25AC01C600FFB23A /* MicrosoftTodoTests.swift */,
+				971F9A5E25AC01C600FFB23A /* Info.plist */,
+			);
+			path = MicrosoftTodoTests;
+			sourceTree = "<group>";
+		};
+		971F9A6625AC01C700FFB23A /* MicrosoftTodoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				971F9A6725AC01C700FFB23A /* MicrosoftTodoUITests.swift */,
+				971F9A6925AC01C700FFB23A /* Info.plist */,
+			);
+			path = MicrosoftTodoUITests;
+			sourceTree = "<group>";
+		};
+		971F9A7F25AC049E00FFB23A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				970288D625AC4919004DCD5C /* star.png */,
+				971F9A8825AC053B00FFB23A /* workspace.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		971F9A8D25AC062D00FFB23A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				971F9A7825AC02A400FFB23A /* WelcomeViewController.swift */,
+				971F9A7925AC02A400FFB23A /* WelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		9767CB8925AEF03400AEC50C /* RealmHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9767CB9525AEF80100AEC50C /* TaskRLM */,
+				9767CB9B25AEFF1300AEC50C /* RealmHelper.swift */,
+			);
+			path = RealmHelper;
+			sourceTree = "<group>";
+		};
+		9767CB9525AEF80100AEC50C /* TaskRLM */ = {
+			isa = PBXGroup;
+			children = (
+				9767CB8A25AEF09200AEC50C /* TaskRLM.swift */,
+				9767CB9625AEF81200AEC50C /* TaskRLMController.swift */,
+			);
+			path = TaskRLM;
+			sourceTree = "<group>";
+		};
+		97ABA32C25AD88FA00883AC2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				97ABA32D25AD892200883AC2 /* CustomView.swift */,
+				97319B4B25B03365002B2FD6 /* Icon.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		97FBAB1525B2016900DB2446 /* Importance */ = {
+			isa = PBXGroup;
+			children = (
+				9781536B25B2B7BE007DE33B /* DateSubview.swift */,
+				9781536C25B2B7BE007DE33B /* DateSubview.xib */,
+				97FBAB1625B2019400DB2446 /* ImportanceViewController.swift */,
+				97FBAB1725B2019400DB2446 /* ImportanceViewController.xib */,
+				97FBAB2025B2037B00DB2446 /* ImportanceTableViewCell.swift */,
+				97FBAB2125B2037B00DB2446 /* ImportanceTableViewCell.xib */,
+				9781533025B29318007DE33B /* AddingImportanceSubview.swift */,
+				9781533525B29361007DE33B /* AddingImportanceSubview.xib */,
+			);
+			path = Importance;
+			sourceTree = "<group>";
+		};
+		AA275129C3BFC43F5BCDBE71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2299465B833E083EFF1748A7 /* Pods_MicrosoftTodo.framework */,
+				08412C7AE45CED884F9C2F05 /* Pods_MicrosoftTodo_MicrosoftTodoUITests.framework */,
+				34417E6FB409446713B54563 /* Pods_MicrosoftTodoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		971F9A4125AC01C500FFB23A /* MicrosoftTodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971F9A6C25AC01C700FFB23A /* Build configuration list for PBXNativeTarget "MicrosoftTodo" */;
+			buildPhases = (
+				F9BAECAEFA6DCEBDDFB1010D /* [CP] Check Pods Manifest.lock */,
+				971F9A3E25AC01C500FFB23A /* Sources */,
+				971F9A3F25AC01C500FFB23A /* Frameworks */,
+				971F9A4025AC01C500FFB23A /* Resources */,
+				C466B31CE84313881941B9B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicrosoftTodo;
+			productName = MicrosoftTodo;
+			productReference = 971F9A4225AC01C600FFB23A /* MicrosoftTodo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		971F9A5725AC01C600FFB23A /* MicrosoftTodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971F9A6F25AC01C700FFB23A /* Build configuration list for PBXNativeTarget "MicrosoftTodoTests" */;
+			buildPhases = (
+				F267A8E41BB3D842EF7C763E /* [CP] Check Pods Manifest.lock */,
+				971F9A5425AC01C600FFB23A /* Sources */,
+				971F9A5525AC01C600FFB23A /* Frameworks */,
+				971F9A5625AC01C600FFB23A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				971F9A5A25AC01C600FFB23A /* PBXTargetDependency */,
+			);
+			name = MicrosoftTodoTests;
+			productName = MicrosoftTodoTests;
+			productReference = 971F9A5825AC01C600FFB23A /* MicrosoftTodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		971F9A6225AC01C700FFB23A /* MicrosoftTodoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971F9A7225AC01C700FFB23A /* Build configuration list for PBXNativeTarget "MicrosoftTodoUITests" */;
+			buildPhases = (
+				500FA7A48847DD4336CB38B5 /* [CP] Check Pods Manifest.lock */,
+				971F9A5F25AC01C700FFB23A /* Sources */,
+				971F9A6025AC01C700FFB23A /* Frameworks */,
+				971F9A6125AC01C700FFB23A /* Resources */,
+				0AA12FDC61730F1D9D2440B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				971F9A6525AC01C700FFB23A /* PBXTargetDependency */,
+			);
+			name = MicrosoftTodoUITests;
+			productName = MicrosoftTodoUITests;
+			productReference = 971F9A6325AC01C700FFB23A /* MicrosoftTodoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		971F9A3A25AC01C500FFB23A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					971F9A4125AC01C500FFB23A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					971F9A5725AC01C600FFB23A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 971F9A4125AC01C500FFB23A;
+					};
+					971F9A6225AC01C700FFB23A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 971F9A4125AC01C500FFB23A;
+					};
+				};
+			};
+			buildConfigurationList = 971F9A3D25AC01C500FFB23A /* Build configuration list for PBXProject "MicrosoftTodo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 971F9A3925AC01C500FFB23A;
+			productRefGroup = 971F9A4325AC01C600FFB23A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				971F9A4125AC01C500FFB23A /* MicrosoftTodo */,
+				971F9A5725AC01C600FFB23A /* MicrosoftTodoTests */,
+				971F9A6225AC01C700FFB23A /* MicrosoftTodoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		971F9A4025AC01C500FFB23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970288D225AC36A8004DCD5C /* MenuTableViewCell.xib in Resources */,
+				971F9A5225AC01C600FFB23A /* LaunchScreen.storyboard in Resources */,
+				971F9A7B25AC02A400FFB23A /* WelcomeViewController.xib in Resources */,
+				9781536E25B2B7BE007DE33B /* DateSubview.xib in Resources */,
+				970288E525AC4C90004DCD5C /* MyDayViewController.xib in Resources */,
+				97319B4725B02B91002B2FD6 /* TaskTableViewCell.xib in Resources */,
+				970288C825AC2D93004DCD5C /* MenuViewController.xib in Resources */,
+				970288D725AC4919004DCD5C /* star.png in Resources */,
+				97FBAB2325B2037B00DB2446 /* ImportanceTableViewCell.xib in Resources */,
+				97319B5E25B044B4002B2FD6 /* DatePickerSubview.xib in Resources */,
+				971F9A4F25AC01C600FFB23A /* Assets.xcassets in Resources */,
+				971F9A8925AC053B00FFB23A /* workspace.png in Resources */,
+				97FBAB1925B2019400DB2446 /* ImportanceViewController.xib in Resources */,
+				974DC5CB25ADA20B00AAB78D /* AddTaskSubview.xib in Resources */,
+				9781533625B29361007DE33B /* AddingImportanceSubview.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971F9A5625AC01C600FFB23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971F9A6125AC01C700FFB23A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AA12FDC61730F1D9D2440B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicrosoftTodo-MicrosoftTodoUITests/Pods-MicrosoftTodo-MicrosoftTodoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicrosoftTodo-MicrosoftTodoUITests/Pods-MicrosoftTodo-MicrosoftTodoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicrosoftTodo-MicrosoftTodoUITests/Pods-MicrosoftTodo-MicrosoftTodoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500FA7A48847DD4336CB38B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicrosoftTodo-MicrosoftTodoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C466B31CE84313881941B9B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicrosoftTodo/Pods-MicrosoftTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicrosoftTodo/Pods-MicrosoftTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicrosoftTodo/Pods-MicrosoftTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F267A8E41BB3D842EF7C763E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicrosoftTodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9BAECAEFA6DCEBDDFB1010D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicrosoftTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		971F9A3E25AC01C500FFB23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FBAB2225B2037B00DB2446 /* ImportanceTableViewCell.swift in Sources */,
+				971F9A4A25AC01C600FFB23A /* ViewController.swift in Sources */,
+				97319B4625B02B91002B2FD6 /* TaskTableViewCell.swift in Sources */,
+				97319B4C25B03365002B2FD6 /* Icon.swift in Sources */,
+				9767CB9C25AEFF1300AEC50C /* RealmHelper.swift in Sources */,
+				970288E425AC4C90004DCD5C /* MyDayViewController.swift in Sources */,
+				9767CB9725AEF81200AEC50C /* TaskRLMController.swift in Sources */,
+				9781533125B29318007DE33B /* AddingImportanceSubview.swift in Sources */,
+				9781536D25B2B7BE007DE33B /* DateSubview.swift in Sources */,
+				971F9A7A25AC02A400FFB23A /* WelcomeViewController.swift in Sources */,
+				974DC5D025ADA21900AAB78D /* AddTaskSubview.swift in Sources */,
+				97ABA32E25AD892200883AC2 /* CustomView.swift in Sources */,
+				971F9A4625AC01C600FFB23A /* AppDelegate.swift in Sources */,
+				97FBAB1825B2019400DB2446 /* ImportanceViewController.swift in Sources */,
+				9767CB8B25AEF09200AEC50C /* TaskRLM.swift in Sources */,
+				97319B5925B044AA002B2FD6 /* DatePickerSubview.swift in Sources */,
+				970288C725AC2D93004DCD5C /* MenuViewController.swift in Sources */,
+				970EB3C525AED8BA0087F827 /* Task.swift in Sources */,
+				970288D125AC36A8004DCD5C /* MenuTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971F9A5425AC01C600FFB23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971F9A5D25AC01C600FFB23A /* MicrosoftTodoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971F9A5F25AC01C700FFB23A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971F9A6825AC01C700FFB23A /* MicrosoftTodoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		971F9A5A25AC01C600FFB23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 971F9A4125AC01C500FFB23A /* MicrosoftTodo */;
+			targetProxy = 971F9A5925AC01C600FFB23A /* PBXContainerItemProxy */;
+		};
+		971F9A6525AC01C700FFB23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 971F9A4125AC01C500FFB23A /* MicrosoftTodo */;
+			targetProxy = 971F9A6425AC01C700FFB23A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		971F9A5025AC01C600FFB23A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971F9A5125AC01C600FFB23A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		971F9A6A25AC01C700FFB23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		971F9A6B25AC01C700FFB23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		971F9A6D25AC01C700FFB23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C015A67272FCA425D8EFA802 /* Pods-MicrosoftTodo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3842AR752;
+				INFOPLIST_FILE = MicrosoftTodo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linh.MicrosoftTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		971F9A6E25AC01C700FFB23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F2F0774C43DA44246622F2 /* Pods-MicrosoftTodo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3842AR752;
+				INFOPLIST_FILE = MicrosoftTodo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linh.MicrosoftTodo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		971F9A7025AC01C700FFB23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE67EE94E6858DF6F19CBF63 /* Pods-MicrosoftTodoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3842AR752;
+				INFOPLIST_FILE = MicrosoftTodoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linh.MicrosoftTodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicrosoftTodo.app/MicrosoftTodo";
+			};
+			name = Debug;
+		};
+		971F9A7125AC01C700FFB23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C27FF4932C9A7C95F46B97 /* Pods-MicrosoftTodoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3842AR752;
+				INFOPLIST_FILE = MicrosoftTodoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linh.MicrosoftTodoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicrosoftTodo.app/MicrosoftTodo";
+			};
+			name = Release;
+		};
+		971F9A7325AC01C700FFB23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F058CAA03E408C35A3106A21 /* Pods-MicrosoftTodo-MicrosoftTodoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3842AR752;
+				INFOPLIST_FILE = MicrosoftTodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linh.MicrosoftTodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MicrosoftTodo;
+			};
+			name = Debug;
+		};
+		971F9A7425AC01C700FFB23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC68CD5ABEB39B917281EA2 /* Pods-MicrosoftTodo-MicrosoftTodoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3842AR752;
+				INFOPLIST_FILE = MicrosoftTodoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linh.MicrosoftTodoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MicrosoftTodo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		971F9A3D25AC01C500FFB23A /* Build configuration list for PBXProject "MicrosoftTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971F9A6A25AC01C700FFB23A /* Debug */,
+				971F9A6B25AC01C700FFB23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971F9A6C25AC01C700FFB23A /* Build configuration list for PBXNativeTarget "MicrosoftTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971F9A6D25AC01C700FFB23A /* Debug */,
+				971F9A6E25AC01C700FFB23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971F9A6F25AC01C700FFB23A /* Build configuration list for PBXNativeTarget "MicrosoftTodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971F9A7025AC01C700FFB23A /* Debug */,
+				971F9A7125AC01C700FFB23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971F9A7225AC01C700FFB23A /* Build configuration list for PBXNativeTarget "MicrosoftTodoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971F9A7325AC01C700FFB23A /* Debug */,
+				971F9A7425AC01C700FFB23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 971F9A3A25AC01C500FFB23A /* Project object */;
+}
