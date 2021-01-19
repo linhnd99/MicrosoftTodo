@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AddingSubViewDelegate {
+protocol AddingSubViewDelegate: class {
     func setSelectingDateState()
     func setAddingSubviewState()
     func completeTask()
@@ -17,7 +17,7 @@ class AddingImportanceSubview: UIView {
 
     // MARK:- UI
     @IBOutlet weak var taskTextField: UITextField!
-    var delegate: AddingSubViewDelegate!
+    weak var delegate: AddingSubViewDelegate!
     var task = Task()
     
     // MARK:-  Action

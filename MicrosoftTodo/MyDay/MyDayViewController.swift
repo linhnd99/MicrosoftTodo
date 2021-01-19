@@ -381,6 +381,4 @@ extension MyDayViewController: TaskTableViewCellDelegate {
     func didSetDone() {
         self.init_()
     }
-    
-    
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DateSubviewDelegate {
+protocol DateSubviewDelegate: class {
     func doneButtonDidTap(date: Date!)
     func cancelButtonDidTap()
 }
@@ -15,7 +15,7 @@ protocol DateSubviewDelegate {
 class DateSubview: UIView {
 
     @IBOutlet weak var picker: UIDatePicker!
-    var delegate: DateSubviewDelegate!
+    weak var delegate: DateSubviewDelegate!
 
     @IBAction func doneButtonDidTap(_ sender: Any) {
         delegate.doneButtonDidTap(date: picker.date)

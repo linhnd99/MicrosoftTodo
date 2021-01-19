@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol TaskTableViewCellDelegate {
+protocol TaskTableViewCellDelegate: class {
     func didSetDone()
 }
 
@@ -21,7 +21,7 @@ class TaskTableViewCell: UITableViewCell {
     
     // MARK:- Model
     var task: Task!
-    var delegate: TaskTableViewCellDelegate!
+    weak var delegate: TaskTableViewCellDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()

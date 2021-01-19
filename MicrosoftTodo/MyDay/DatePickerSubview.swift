@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DatePickerSubviewDelegate {
+protocol DatePickerSubviewDelegate: class {
     func cancelButtonDidTap()
     func doneButtonDidTap(date: Date!)
 }
@@ -15,7 +15,7 @@ protocol DatePickerSubviewDelegate {
 class DatePickerSubview: UIView {
 
     @IBOutlet weak var datePicker: UIDatePicker!
-    var delegate: DatePickerSubviewDelegate?
+    weak var delegate: DatePickerSubviewDelegate?
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

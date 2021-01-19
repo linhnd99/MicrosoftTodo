@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ImportanceTableViewCellDelegate {
+protocol ImportanceTableViewCellDelegate: class {
     func _reloadData()
 }
 
@@ -19,7 +19,7 @@ class ImportanceTableViewCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView!
     
     var task: Task!
-    var delegate: ImportanceTableViewCellDelegate!
+    weak var delegate: ImportanceTableViewCellDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()

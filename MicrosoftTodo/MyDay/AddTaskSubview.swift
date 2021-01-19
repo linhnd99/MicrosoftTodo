@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol AddTaskDelegate {
+protocol AddTaskDelegate: class {
     func completeAddingTask()
     func completeTask(_ task: Task)
     func dateButtonDidTap()
@@ -18,7 +18,7 @@ class AddTaskSubview: UIView {
 
     @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var optionView: UIView!
-    var delegate: AddTaskDelegate?
+    weak var delegate: AddTaskDelegate?
     var pickerSubview: DatePickerSubview?
     
     func initAction() {
